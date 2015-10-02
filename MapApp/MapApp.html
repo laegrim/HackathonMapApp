@@ -1,14 +1,23 @@
-<head>
-  <title>MapApp</title>
-</head>
+ <head>
+ 	<style type="text/css">
+   	html, body { height: 100%; margin: 0; padding: 0; }
+   	#map { height: 100%; }
+ 	</style>
+ </head>
+ <body>
+ 	<div id="map"></div>
+ 	<script type="text/javascript">
 
-<body>
-  <h1>Welcome to Meteor!</h1>
+var map;
+function initMap() {
+  map = new google.maps.Map(document.getElementById('map'), {
+ center: {lat: -34.397, lng: 150.644},
+ zoom: 8
+  });
+}
 
-  {{> hello}}
-</body>
-
-<template name="hello">
-  <button>Click Me</button>
-  <p>You've pressed the button {{counter}} times.</p>
-</template>
+ 	</script>
+ 	<script async defer
+   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD5YRUAbzw3CVQH0xKZ50Miqetgix2EHDo&callback=initMap">
+ 	</script>
+ </body>
