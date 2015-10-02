@@ -386,6 +386,13 @@ a:hover {
 	width:25%;
 	height:400px;
 }
+#togglePin {
+	position:absolute;
+	top: 15%;
+    right: 30%;
+    width: 200px;
+    height: 100px;
+}
 
 #chat {
 	align:center;
