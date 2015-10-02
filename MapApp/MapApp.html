@@ -9,20 +9,21 @@
  	<script type="text/javascript">
 
 var map;
+var marker;
 function initMap() {
-  map = new google.maps.Map(document.getElementById('map'), {
- center: {lat: 29.8894548,lng: -97.9444192},
- zoom: 16
-  });
+  map = new google.maps.Map(
+  	document.getElementById('map'), {
+ 		center: {lat: 29.8894548,lng: -97.9444192},
+ 		zoom: 16
+  	});
+  	google.maps.event.addListener(map, 'click', function( event ){
+  marker = new google.maps.Marker({
+  	map: map,
+  	position: event.latLng,
+  	title: "Latitude: "+event.latLng.lat()+" "+", longitude: "+event.latLng.lng(),
+  	});
+	});
 }
-// Create a marker and set its position.
-var marker = new google.maps.Marker({
-    map: map,
-    position: myLatLng,
-    title: 'this is a pin'
-  });
-
-
  	</script>
  	<script async defer
    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD5YRUAbzw3CVQH0xKZ50Miqetgix2EHDo&callback=initMap">
