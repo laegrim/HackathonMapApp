@@ -11,10 +11,17 @@
 var map;
 function initMap() {
   map = new google.maps.Map(document.getElementById('map'), {
- center: {lat: -34.397, lng: 150.644},
- zoom: 8
+ center: {lat: 29.8894548,lng: -97.9444192},
+ zoom: 16
   });
 }
+// Create a marker and set its position.
+var marker = new google.maps.Marker({
+    map: map,
+    position: myLatLng,
+    title: 'this is a pin'
+  });
+
 
  	</script>
  	<script async defer
