@@ -390,6 +390,14 @@ a:hover {
 	width:30%;
 	height:400px;
 }
+
+#banner .tags p{
+	padding-top: 10px;
+	padding-left: 50px;
+	color:white;
+	align:center;
+}
+
 #togglePin {
 	position:absolute;
 	top: 20%;
