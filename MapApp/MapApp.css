@@ -16,10 +16,12 @@ body {
 
 h1, h2, h3 {
 	margin: 0;
+	align:center;
 	padding: 0;
 	font-weight: normal;
 	font-weight: 200;
-	color: #222222;
+	color: white;
+	text-decoration: none;
 }
 
 h1 {
@@ -32,6 +34,7 @@ h2 {
 
 h3 {
 	font-size: 1.6em;
+	padding-left: 85%;
 }
 
 p, ul, ol {
@@ -362,7 +365,7 @@ a:hover {
 }
 
 #sidebar a:hover {
-	text-decoration: underline;
+	text-decoration: none;
 }
 
 #banner {
@@ -383,12 +386,21 @@ a:hover {
 #banner .tags {
 	border: 3px solid white; 
 	float:right;
-	width:25%;
+	padding-right:60px;
+	width:30%;
 	height:400px;
 }
+
+#banner .tags p{
+	padding-top: 10px;
+	padding-left: 50px;
+	color:white;
+	align:center;
+}
+
 #togglePin {
 	position:absolute;
-	top: 15%;
+	top: 20%;
     right: 30%;
     width: 200px;
     height: 100px;
